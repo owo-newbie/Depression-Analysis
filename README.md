@@ -6,7 +6,6 @@ This is the README file.
 - Overview
 - Features
 - Installation
-- Usage
 - Demonstration
 - Contributing
 
