@@ -41,12 +41,12 @@ print("11. Exit.")
 Press 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 to show the graph or exit.
 
 ## Demonstration
-Here's a PPT where you can see the explanations of these graph:
+1. Here's a PPT where you can see the explanations of these graph:
 ```
 https://docs.google.com/presentation/d/1KbQgtj1XLrNDNA41L9hpXu2kvwRKm5AbuOI95BOV8EA/edit?usp=sharing
 ```
 
-Here's a video where to show how to use the terminal interface:
+2. Here's a video where to show how to use the terminal interface:
 ```
 https://drive.google.com/file/d/1lhsWGlKn_Q25rTTCtiYcmQMITS2ufZS0/view?usp=sharing
 ```
