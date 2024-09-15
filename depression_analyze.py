@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
+import seaborn as sns   
 
 df = pd.read_csv("depression_data.csv", index_col=0)
 #print(df.columns.to_list())
@@ -18,7 +18,8 @@ def main():
         print("8. Number of Children Distribution of Married People.")
         print("9. Number of Children Distribution of Married People Who over 50 Ages.")
         print("10. Family Depression History and Personal Mental Illness History.")
-        print("11. Exit.")
+        print("11. Number of people getting depression who have n children.")
+        print("12. Exit.")
         user_input = input("Enter a number to show the graph: ")
         
         if user_input.isdigit():
@@ -127,7 +128,6 @@ def main():
                 # children number of married people that Age >= 50
                 married_df_age_50 = df[(df['Marital Status'] == 'Married') & (df['Age'] >= 50)]
                 children_counts_age_50 = married_df_age_50['Number of Children'].value_counts().sort_index()
-                plt.figure(figsize=(10, 6))
                 sns.barplot(x=children_counts_age_50.index, y=children_counts_age_50.values, palette='viridis')
                 plt.title('Number of Children Distribution of Married People Who over 50 Ages', fontsize=16)
                 plt.xlabel('Number of Children', fontsize=12)
@@ -151,6 +151,24 @@ def main():
                 plt.show()
 
             elif choice == 11:
+                number_of_children = int(input("n (enter 1-4): "))
+                
+                if number_of_children == 1:
+                    children_of_depression_people = df[df["Number of Children"] == number_of_children].shape[0]
+                    print()
+                    print(f"Number of people getting depression who have 1 child is {children_of_depression_people}.")
+                    print()
+                elif 2 <= number_of_children <= 4:
+                    children_of_depression_people = df[df["Number of Children"] == number_of_children].shape[0]
+                    print()
+                    print(f"Number of people getting depression who have {number_of_children} children is {children_of_depression_people}.")
+                    print()
+                else:
+                    print()
+                    print("That's not a valid number. Please try again.")
+                    print()
+
+            elif choice == 12:
                 print("Exiting...")
                 break
 
