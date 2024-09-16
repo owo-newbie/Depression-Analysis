@@ -29,7 +29,6 @@ def main():
                 # relationship between depression and age
                 age = df["Age"]
                 age_counts = age.value_counts().sort_index()
-                plt.figure(figsize=(10, 6))
                 plt.plot(age_counts.index, age_counts.values, marker='o', linestyle='-')
                 plt.title('Depression and Age')
                 plt.xlabel('Age')

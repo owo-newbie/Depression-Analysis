@@ -35,9 +35,10 @@ print("7. Marital Status Counts.")
 print("8. Number of Children Distribution of Married People.")
 print("9. Number of Children Distribution of Married People Who over 50 Ages.")
 print("10. Family Depression History and Personal Mental Illness History.")
-print("11. Exit.")
+print("11. Number of people getting depression who have n children.")
+print("12. Exit.")
 ``` 
-Press 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 to show the graph or exit.
+Press 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 to show the graph or exit.
 
 ## Demonstration
 1. Here's a PPT where you can see the explanations of these graph:
